@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.view')
 
 @section('content')
 
@@ -17,7 +17,7 @@
 
             <div class="flex flex-wrap gap-4">
                 <button class="btn-primary">Book Appointment</button>
-                <a href="/login" class="btn-secondary">Login</a>
+                <a href="{{ route('login') }}" class="btn-secondary">Login</a>
             </div>
         </div>
 
@@ -259,7 +259,7 @@
 
     <div class="flex justify-center gap-4 flex-wrap">
         <button class="btn-primary">Request Appointment</button>
-        <a href="/login" class="btn-secondary">Login</a>
+        <a href="{{ route('login') }}" class="btn-secondary">Login</a>
     </div>
 </section>
 
