@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300;400;500;600;700&display=swap');
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +7,34 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Funnel Display', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+@layer base {
+    body {
+        font-family: 'Funnel Display', sans-serif;
+    }
+}
+@layer components {
+    .btn-primary {
+        @apply bg-black text-white px-6 py-3 rounded hover:bg-gray-800 transition;
+    }
+
+    .btn-secondary {
+        @apply border px-6 py-3 rounded hover:bg-gray-100 transition;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold mb-6;
+    }
+}
+
+.card {
+    @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center transition hover:shadow-md;
+}
+
+.icon {
+    @apply text-blue-600 text-2xl mb-3;
 }

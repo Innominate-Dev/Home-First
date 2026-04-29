@@ -1,59 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Home First: Digital Healthcare Transformation
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern, accessible, and secure digital platform for **Home First**, a UK-based health and wellbeing company. This project replaces manual spreadsheets with a Laravel-based system designed for elderly patients, healthcare staff, and management.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📖 Case Study Background
+Home First provides nursing and physiotherapy services directly in patients' homes. As the company expands from 7 to over 25 staff members, this platform addresses:
+* **Accessibility:** High-contrast, large-typography UI for elderly service users.
+* **Security:** Secure patient data management replacing insecure emails/spreadsheets.
+* **Sustainability:** AI-driven scheduling to reduce the company's carbon footprint.
+* **Efficiency:** Centralised portals for staff scheduling and office management.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tech Stack
+* **Framework:** [Laravel](https://laravel.com)
+* **Database:** MySQL
+* **Local Server:** [XAMPP](https://apachefriends.org)
+* **Design:** Figma (Z-Pattern layout, Plus Jakarta Sans typography)
+* **Frontend:** Blade, CSS3, JavaScript
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Installation Guide (Local Simulation via XAMPP)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Follow these steps to set up the environment locally:
 
-## Laravel Sponsors
+### 1. Project Setup
+Place the project folder in your `xampp/htdocs` directory:
+```bash
+cd xampp/htdocs
+git clone https://github.com
+cd home-first
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Dependency Management
+Install the necessary PHP dependencies via Composer:
+```bash
+composer install
+```
 
-### Premium Partners
+### 3. Environment Configuration
+Create your environment file and generate the application key:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 4. Database Configuration
+1. Open **XAMPP Control Panel** and start **Apache** and **MySQL**.
+2. Visit `http://localhost/phpmyadmin/` and create a database named `home_first_db`.
+3. Update your `.env` file with your local credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=home_first_db
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-## Contributing
+### 5. Run Migrations
+Push the database schema to your local MySQL server:
+```bash
+php artisan migrate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 6. Launch Application
+```bash
+php artisan serve
+```
+The site will be available at: `http://127.0.0.1:8000`
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🎨 UI/UX Features
+* **Z-Pattern Layout:** Optimized for natural scanning and ease of use.
+* **Dual-Portal Access:** Separate, secure login flows for Patients and Healthcare Staff.
+* **Responsive Design:** Mobile-friendly layouts for staff visiting patients on-site.
+* **WCAG 2.1 Compliance:** High-contrast color palette and 18px+ font sizes.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 👥 Stakeholders
+* **Office Manager:** Tools for scheduling and staff oversight.
+* **Staff Representative:** Mobile-access to daily visit routes and patient records.
+* **Service User:** A simple, trusting interface for booking and viewing care.
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 📄 License
+This project is part of a Digital Transformation Case Study. 
