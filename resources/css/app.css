@@ -29,12 +29,31 @@
     .section-title {
         @apply text-3xl font-bold mb-6;
     }
-}
 
-.card {
-    @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center transition hover:shadow-md;
-}
+    .card {
+        @apply bg-white p-6 rounded-xl border border-gray-100 shadow-sm text-center transition hover:shadow-md;
+    }
 
-.icon {
-    @apply text-blue-600 text-2xl mb-3;
+    .card-2{ 
+        @apply bg-white rounded-2xl border border-gray-100 shadow-sm 
+               p-6 flex flex-col items-center text-center 
+               transition hover:shadow-md hover:-translate-y-1;
+    }
+
+    .icon {
+        @apply text-blue-600 text-5xl mb-3;
+    }
+
+    .step {
+        @apply flex items-center gap-4;
+    }
+
+    .step span {
+        @apply bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-full font-semibold;
+    }
+
+    .input-field {
+        @apply w-full border border-gray-200 rounded-lg px-4 py-2 
+               focus:outline-none focus:ring-2 focus:ring-blue-500;
+    }
 }

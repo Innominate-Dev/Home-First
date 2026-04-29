@@ -2,9 +2,9 @@
     <img src="{{ asset('images/transparent-logo-1.png') }}" alt="Home First Logo" class="h-10 w-auto">
 
     <div class="space-x-6">
-        <a href="#" class="hover:text-blue-600">Home</a>
-        <a href="#" class="hover:text-blue-600">About</a>
-        <a href="#" class="hover:text-blue-600">Services</a>
+        <a href="{{ url('/') }}" class="hover:text-blue-600">Home</a>
+        <a href="{{ url('/') }}" class="hover:text-blue-600">About</a>
+        <a href="{{ url('/') }}" class="hover:text-blue-600">Services</a>
     </div>
 
     <div>
