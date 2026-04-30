@@ -6,8 +6,9 @@
         <a href="{{ url('/') }}" class="hover:text-blue-600">About</a>
         <a href="{{ url('/') }}" class="hover:text-blue-600">Services</a>
     </div>
-
-    <div>
+    
+    <div class="space-x-6">
+        <a href="{{ url('/register/') }}" class="bg-gray-800 text-white px-4 py-2 rounded">Register</a>
         <a href="{{ url('/login/') }}" class="bg-gray-800 text-white px-4 py-2 rounded">Login</a>
     </div>
 </nav>
