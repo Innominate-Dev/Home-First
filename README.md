@@ -17,7 +17,7 @@ Home First provides nursing and physiotherapy services directly in patients' hom
 * **Framework:** [Laravel](https://laravel.com)
 * **Database:** MySQL
 * **Local Server:** [XAMPP](https://apachefriends.org)
-* **Design:** Figma (Z-Pattern layout, Plus Jakarta Sans typography)
+* **Design:** Figma
 * **Frontend:** Blade, CSS3, JavaScript
 
 ---
@@ -38,6 +38,9 @@ cd home-first
 Install the necessary PHP dependencies via Composer:
 ```bash
 composer install
+```
+```bash
+npm install
 ```
 
 ### 3. Environment Configuration
@@ -74,20 +77,5 @@ The site will be available at: `http://127.0.0.1:8000`
 
 ---
 
-## 🎨 UI/UX Features
-* **Z-Pattern Layout:** Optimized for natural scanning and ease of use.
-* **Dual-Portal Access:** Separate, secure login flows for Patients and Healthcare Staff.
-* **Responsive Design:** Mobile-friendly layouts for staff visiting patients on-site.
-* **WCAG 2.1 Compliance:** High-contrast color palette and 18px+ font sizes.
-
----
-
-## 👥 Stakeholders
-* **Office Manager:** Tools for scheduling and staff oversight.
-* **Staff Representative:** Mobile-access to daily visit routes and patient records.
-* **Service User:** A simple, trusting interface for booking and viewing care.
-
----
-
 ## 📄 License
-This project is part of a Digital Transformation Case Study. 
+This project is part of a Digital Transformation Case Study for University and serves no other purpose. 
