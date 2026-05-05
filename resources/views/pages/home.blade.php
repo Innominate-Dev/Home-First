@@ -16,7 +16,7 @@
             </p>
 
             <div class="flex flex-wrap gap-4">
-                <button class="btn-primary">Book Appointment</button>
+                <a href="{{ route('login') }}" class="btn-primary">Book Appointment</a>
                 <a href="{{ route('login') }}" class="btn-secondary">Login</a>
             </div>
         </div>
@@ -129,11 +129,49 @@
 
 
 <!-- TESTIMONIALS -->
-<section class="py-24">
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<section class="py-24 px-6 max-w-7xl mx-auto">
+    <!-- Grid centered with even gaps -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center">
         <div class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
             <div class="flex items-center gap-4 text-slate-800">
-                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                <img src="https://plus.unsplash.com/premium_photo-1690579805273-fd0c7b08035d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyJTIwcHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                <div class="flex w-full flex-col">
+                    <div class="flex items-center justify-between">
+                        <h5 class="text-xl font-semibold text-slate-800">
+                            Loraine Maine
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">
+                        Attended Well-being support
+                    </p>
+                </div>
+            </div>
+            <div class="mt-6">
+                <p class="text-base text-slate-600 font-light leading-normal">
+                    &quot;Really patient and helpful they guided me through a tough time.&quot;
+                </p>
+            </div>
+        </div>
+            <div class="flex p-6 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-1">
+            <div class="flex items-center gap-4 text-slate-800">
+                <img src="https://images.unsplash.com/photo-1619895862022-09114b41f16f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8V09NRU4lMjBwcm9maWxlJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
                 <div class="flex w-full flex-col">
                     <div class="flex items-center justify-between">
                         <h5 class="text-xl font-semibold text-slate-800">
@@ -158,25 +196,23 @@
                         </div>
                     </div>
                     <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                        Designer @ Google
+                        DEMENTIA CARE
                     </p>
                 </div>
             </div>
             <div class="mt-6">
                 <p class="text-base text-slate-600 font-light leading-normal">
-                    &quot;I found solution to all my design needs from Creative Tim. I use
-                    them as a freelancer in my hobby projects for fun! And its really
-                    affordable, very humble guys !!!&quot;
+                    &quot;My mother is well looked after and every staff interaction I have seen has been kind and respectful. The senior nurses are always helpful and knowledgeable about her care.&quot;
                 </p>
             </div>
         </div>
             <div class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
             <div class="flex items-center gap-4 text-slate-800">
-                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
                 <div class="flex w-full flex-col">
                     <div class="flex items-center justify-between">
                         <h5 class="text-xl font-semibold text-slate-800">
-                            Tania Andrew
+                            Michael Sanders
                         </h5>
                         <div class="flex items-center gap-0 5">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
@@ -197,69 +233,45 @@
                         </div>
                     </div>
                     <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                        Designer @ Google
+                        ATTENDED PHYSIOLOGY
                     </p>
                 </div>
             </div>
             <div class="mt-6">
                 <p class="text-base text-slate-600 font-light leading-normal">
-                    &quot;I found solution to all my design needs from Creative Tim. I use
-                    them as a freelancer in my hobby projects for fun! And its really
-                    affordable, very humble guys !!!&quot;
-                </p>
-            </div>
-        </div>
-            <div class="flex w-full p-4 max-w-lg flex-col rounded-lg bg-white shadow-sm border border-slate-200 my-6">
-            <div class="flex items-center gap-4 text-slate-800">
-                <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
-                <div class="flex w-full flex-col">
-                    <div class="flex items-center justify-between">
-                        <h5 class="text-xl font-semibold text-slate-800">
-                            Tania Andrew
-                        </h5>
-                        <div class="flex items-center gap-0 5">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-yellow-600">
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="text-xs uppercase font-bold text-slate-500 mt-0.5">
-                        Designer @ Google
-                    </p>
-                </div>
-            </div>
-            <div class="mt-6">
-                <p class="text-base text-slate-600 font-light leading-normal">
-                    &quot;I found solution to all my design needs from Creative Tim. I use
-                    them as a freelancer in my hobby projects for fun! And its really
-                    affordable, very humble guys !!!&quot;
+                    &quot;They helped me get back on my feet after a horrible accident. Forever thankful.&quot;
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-blue-100 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-semibold mb-6">
-        Ready to get started?
-    </h2>
+<!-- CTA Section -->
+<section class="relative w-full overflow-visible pt-20">
+    
+    <div class="absolute bottom-0 left-0 w-full h-[55%] bg-[#E0FBFC] -z-10"></div>
 
-    <div class="flex justify-center gap-4 flex-wrap">
-        <button class="btn-primary">Request Appointment</button>
-        <a href="{{ route('login') }}" class="btn-secondary">Login</a>
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-end justify-between gap-12">
+        
+        <div class="md:w-1/3 flex justify-center items-end">
+            <img src="{{ asset('images/docHelping.png') }}" alt="Home First Care" class="max-h-[500px] w-auto block object-contain transform translate-y-[1px]">
+        </div>
+
+        <!-- Text and Buttons -->
+        <div class="md:w-2/3 text-center md:text-left pb-20 md:pb-32">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1A365D] mb-10 leading-tight">
+                Ready to experience care that puts you first?
+            </h2>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-6">
+                <a href="{{ route('register') }}" class="bg-[#253237] text-white px-8 py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-black transition shadow-lg">
+                    Register as New Patient
+                </a>
+                <a href="{{ route('login') }}" class="bg-[#253237] text-white px-8 py-4 rounded-lg font-bold text-xs uppercase tracking-widest hover:bg-black transition shadow-lg">
+                    Login to Your Portal
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
